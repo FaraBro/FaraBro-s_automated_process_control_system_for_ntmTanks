@@ -27,7 +27,7 @@ end
 
 function redstoneOutput(Output, tableOfRedstones)
 	for indexRedstone, valueRedstone in ipairs(tableOfRedstones) do
-		for Side = 1, 6 do
+		for Side = 0, 5 do
 			valueRedstone.setOutput(Side, Output)
 		end
 	end
@@ -63,4 +63,4 @@ while true do
 	end
 	
 	os.sleep(2.5)
-	end
+end
